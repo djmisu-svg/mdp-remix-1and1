@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#10110f">
+  <meta name="description" content="MdP RemiX 1&amp;1 — playlisturile tale YouTube, într-un singur loc. Biblioteca ta personală de muzică, făcută pentru telefon.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>MdP RemiX 1&amp;1 · Muzica ta, ritmul tău</title>
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/icon-192.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <svg class="svg-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1Z"/></symbol>
+    <symbol id="i-library" viewBox="0 0 24 24"><path d="M4 4v16M9 4v16M14 4v16m4-15 3 14"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m9 5 11 7-11 7Z"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 3h7v7m0-7L10 14M10 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-more" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></symbol>
+    <symbol id="i-shuffle" viewBox="0 0 24 24"><path d="M3 5h3c5 0 7 14 12 14h3m-4-4 4 4-4 4M3 19h3c5 0 7-14 12-14h3m-4-4 4 4-4 4"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V4m-5 5 5-5 5 5M4 16v5h16v-5"/></symbol>
+    <symbol id="i-settings" viewBox="0 0 24 24"><path d="M4 7h16M4 17h16"/><circle cx="8" cy="7" r="3"/><circle cx="16" cy="17" r="3"/></symbol>
+    <symbol id="i-music" viewBox="0 0 24 24"><path d="M9 17V5l11-2v12M9 8l11-2"/><ellipse cx="6" cy="18" rx="3" ry="3"/><ellipse cx="17" cy="16" rx="3" ry="3"/></symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3Z"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M3 6h18M9 6V3h6v3M5 6l1 15h12l1-15M10 10v7m4-7v7"/></symbol>
+    <symbol id="i-edit" viewBox="0 0 24 24"><path d="m16 3 5 5L9 20l-6 1 1-6Zm-3 3 5 5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Sari la conținut</a>
+  <div class="app-shell">
+    <header class="header">
+      <a class="brand" href="#home" aria-label="MdP RemiX 1&amp;1, acasă">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span>MdP <strong>RemiX<span class="brand-dot">.</span></strong><small class="brand-edition">1&amp;1</small></span>
+      </a>
+      <div class="header-actions"><span class="private-label"><span></span> Doar pentru tine</span><button class="icon-button settings-button" data-action="settings" aria-label="Setări și instalare"><svg><use href="#i-settings"/></svg></button></div>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section class="hero" id="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="small-line"></span> MUZICA TA. RITMUL TĂU.</div>
+          <h1 id="hero-title">Dă play.<br><span>Fii tu.</span></h1>
+          <p>Toate vibe-urile tale de pe YouTube.<br>O singură bibliotecă. A ta.</p>
+          <button class="button primary" data-action="add"><svg><use href="#i-plus"/></svg> Adaugă playlist</button>
+          <button class="text-button hero-help" data-action="guide">Cum funcționează <svg><use href="#i-arrow"/></svg></button>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+          <div class="hero-disc"><div class="disc-groove"></div><div class="disc-label"><span>MdP</span><strong>RemiX</strong><i></i></div></div>
+          <div class="album-sleeve"><div class="sleeve-top"><span>PERSONAL<br>COLLECTION</span><b>01 / ∞</b></div><div class="sleeve-star">✳</div><div class="sleeve-title">GOOD<br>VIBES<span>ONLY.</span></div><div class="sleeve-bottom"><span>RemiX</span><div class="barcode"></div></div></div>
+          <div class="art-sticker"><span class="equalizer"><i></i><i></i><i></i><i></i></span> ON YOUR FREQUENCY</div>
+          <span class="art-spark spark-one">✦</span><span class="art-spark spark-two">+</span>
+        </div>
+        <div class="hero-footer"><span><svg><use href="#i-youtube"/></svg> Din YouTube, pentru tine</span><span class="hero-footer-right">PRESS PLAY & FEEL SOMETHING ↗</span></div>
+      </section>
+
+      <section class="library-section" aria-labelledby="library-title">
+        <div class="section-heading"><div><div class="eyebrow section-eyebrow">UN LOC PENTRU FIECARE VIBE</div><h2 id="library-title">Colecția ta<span class="lime-dot">.</span></h2></div><button class="icon-button add-circle" data-action="add" aria-label="Adaugă un playlist"><svg><use href="#i-plus"/></svg></button></div>
+        <div class="library-toolbar" id="library-toolbar" hidden>
+          <label class="search-box"><svg><use href="#i-search"/></svg><input id="search" type="search" placeholder="Caută în playlisturile tale" aria-label="Caută în playlisturile tale" autocomplete="off"></label>
+          <button class="icon-button shuffle-button" data-action="shuffle" aria-label="Redă un playlist la întâmplare" title="Surprinde-mă"><svg><use href="#i-shuffle"/></svg></button>
+        </div>
+        <div class="filter-row" id="filters" aria-label="Filtrează după categorie" hidden></div>
+        <div class="collection-meta"><span id="collection-count">0 playlisturi</span><span id="collection-hint">Adună ce-ți place. Ascultă când vrei.</span><label class="sort-label" id="sort-label" hidden><span class="sr-only">Ordonează playlisturile</span><select id="sort-order"><option value="manual">Ordinea mea</option><option value="newest">Cele mai noi</option><option value="name">Nume: A–Z</option><option value="favorites">Favorite întâi</option></select></label></div>
+        <div id="collection"></div>
+      </section>
+
+      <button id="last-played" class="last-played" data-action="resume" hidden><span class="last-icon"><svg><use href="#i-music"/></svg></span><span class="last-copy"><small>ULTIMA ASCULTARE</small><strong id="last-played-title"></strong></span><span class="last-play"><svg><use href="#i-play"/></svg></span></button>
+      <button class="install-shortcut" id="install-shortcut" data-action="install-shortcut"><span class="install-shortcut-icon"><svg><use href="#i-download"/></svg></span><span><strong>Instalează pe telefon</strong><small>MdP RemiX 1&amp;1, direct pe ecranul tău.</small></span><svg><use href="#i-arrow"/></svg></button>
+      <footer class="page-footer"><span>Creat pentru ritmul tău.</span><span>MdP RemiX 1&amp;1 © 2026</span></footer>
+    </main>
+  </div>
+
+  <nav class="bottom-nav" aria-label="Navigare principală"><a href="#home" data-view="home" aria-current="page"><svg><use href="#i-home"/></svg><span>Acasă</span></a><a href="#library" data-view="library"><svg><use href="#i-library"/></svg><span>Bibliotecă</span></a><a href="#favorites" data-view="favorites"><svg><use href="#i-heart"/></svg><span>Favorite</span></a></nav>
+
+  <dialog id="add-dialog" class="sheet-dialog" aria-labelledby="add-title">
+    <div class="sheet-header"><div><div class="eyebrow">FĂ LOC PENTRU MUZICĂ</div><h2 id="add-title">Un nou vibe<span class="lime-dot">.</span></h2></div><button class="icon-button" data-action="close" aria-label="Închide"><svg><use href="#i-close"/></svg></button></div>
+    <form id="playlist-form">
+      <label class="field">Link YouTube <span class="required-note">obligatoriu</span><input id="playlist-url" type="url" placeholder="https://www.youtube.com/playlist?list=…" inputmode="url" required autocomplete="off" spellcheck="false" aria-describedby="url-help form-error"><span class="field-help" id="url-help">Copiază linkul unui playlist sau al unui clip din YouTube.</span></label>
+      <label class="field">Numele tău pentru playlist<input id="playlist-name" type="text" placeholder="De exemplu: Remixurile mele" maxlength="100" autocomplete="off"></label>
+      <label class="field">Ce vibe are?<select id="playlist-category"><option value="Remix">Remix</option><option value="Chill">Chill</option><option value="Energie">Energie</option><option value="Altele">Altele</option></select></label>
+      <p class="form-error" id="form-error" role="alert" hidden></p>
+      <button type="submit" class="button primary full-width" id="save-button"><svg><use href="#i-plus"/></svg> Salvează în bibliotecă</button>
+      <p class="form-footnote">Playlisturile rămân salvate pe acest dispozitiv.</p>
+    </form>
+  </dialog>
+
+  <dialog id="player-dialog" class="player-dialog" aria-labelledby="player-title">
+    <div class="sheet-header"><div><div class="eyebrow">ACUM E TIMPUL TĂU</div><h2 id="player-title"></h2></div><button class="icon-button" data-action="close" aria-label="Închide playerul și oprește redarea"><svg><use href="#i-close"/></svg></button></div>
+    <div class="video-container" id="video-container"></div>
+    <p class="player-note" id="player-status" role="status" aria-live="polite">Folosește comenzile YouTube pentru redare și pentru piesele din playlist.</p>
+    <a class="button secondary full-width" id="youtube-link" target="_blank" rel="noopener noreferrer">Deschide în YouTube <svg><use href="#i-external"/></svg></a>
+    <p class="form-footnote">Dacă YouTube nu permite redarea aici, folosește butonul de mai sus.</p>
+  </dialog>
+
+  <dialog id="settings-dialog" class="sheet-dialog" aria-labelledby="settings-title">
+    <div class="sheet-header"><div><div class="eyebrow">PROPRIA TA COLECȚIE</div><h2 id="settings-title">Pe ritmul tău<span class="lime-dot">.</span></h2></div><button class="icon-button" data-action="close" aria-label="Închide"><svg><use href="#i-close"/></svg></button></div>
+    <div class="setting-block"><h3>MdP RemiX 1&amp;1 pe ecranul telefonului</h3><p id="install-instructions">Pe Android: meniul browserului → „Instalează aplicația” sau „Adaugă pe ecranul de pornire”. Pe iPhone: deschide în Safari → Partajează → „Adaugă pe ecranul principal”.</p><button class="button primary full-width" id="install-button" data-action="install" hidden><svg><use href="#i-download"/></svg> Instalează aplicația</button></div>
+    <div class="setting-block"><h3>Biblioteca ta, în siguranță</h3><p id="storage-note">Lista este salvată în acest browser, pe acest dispozitiv. Exportă o copie ca să o păstrezi sau să o muți pe alt telefon.</p><div class="backup-actions"><button class="button secondary" data-action="export"><svg><use href="#i-download"/></svg> Exportă</button><button class="button secondary" data-action="import"><svg><use href="#i-upload"/></svg> Importă</button></div></div>
+    <div class="setting-block"><h3>Actualizarea aplicației</h3><p>Aplicația verifică automat versiunile noi când ai internet. Favoritele și playlisturile tale sunt păstrate.</p><button class="button primary full-width" id="update-button" data-action="update" hidden>Actualizează aplicația</button></div><div class="setting-block about-block"><span class="brand-mark mini-brand" aria-hidden="true"><i></i><i></i><i></i><i></i></span><div><strong>MdP RemiX 1&amp;1 · v1.1</strong><p>Biblioteca merge și fără internet. Redarea YouTube necesită internet și respectă disponibilitatea clipurilor pe YouTube.</p></div></div>
+  </dialog>
+
+  <dialog id="guide-dialog" class="sheet-dialog" aria-labelledby="guide-title">
+    <div class="sheet-header"><div><div class="eyebrow">MAI PUȚIN CĂUTAT. MAI MULT ASCULTAT.</div><h2 id="guide-title">Simplu ca un play<span class="lime-dot">.</span></h2></div><button class="icon-button" data-action="close" aria-label="Închide"><svg><use href="#i-close"/></svg></button></div>
+    <ol class="guide-steps"><li><span>01</span><div><h3>Găsește-ți vibe-ul</h3><p>Deschide un playlist în YouTube, apasă „Distribuie” și copiază linkul.</p></div></li><li><span>02</span><div><h3>Fă-l al tău</h3><p>Apasă „Adaugă playlist”, lipește linkul și dă-i un nume.</p></div></li><li><span>03</span><div><h3>Dă play, oricând</h3><p>Ascultă din colecție și apasă pe inimă ca să-l găsești rapid la Favorite.</p></div></li></ol>
+    <button class="button primary full-width" data-action="add"><svg><use href="#i-plus"/></svg> Adaugă primul playlist</button>
+  </dialog>
+
+  <dialog id="item-dialog" class="sheet-dialog compact-dialog" aria-labelledby="item-title"><div class="sheet-header"><h2 id="item-title"></h2><button class="icon-button" data-action="close" aria-label="Închide"><svg><use href="#i-close"/></svg></button></div><div id="item-actions"></div></dialog>
+  <dialog id="delete-dialog" class="sheet-dialog compact-dialog" aria-labelledby="delete-title"><div class="sheet-header"><h2 id="delete-title">Elimini playlistul?</h2><button class="icon-button" data-action="close" aria-label="Anulează"><svg><use href="#i-close"/></svg></button></div><p id="delete-description"></p><div class="backup-actions"><button class="button secondary" data-action="close">Păstrează</button><button class="button danger" data-action="confirm-delete">Elimină</button></div></dialog>
+  <input type="file" id="import-file" accept="application/json,.json" hidden>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <noscript><div class="noscript-message">Activează JavaScript în browser pentru a adăuga și reda playlisturi în MdP RemiX 1&amp;1.</div></noscript>
+</body>
+</html>
